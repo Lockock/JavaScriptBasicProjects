@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name = "author" content="林子新"/>
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0"/>
+        <title>event listener practice</title>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+    <body>
+        <h1>這是練習event listener的網頁</h1>
+        <img id = "img" src="hotpot1.jpeg" width="300px" alt="照片無法顯示"/>
+        <br/>
+
+        <!-- 事件監聽器的寫法有兩種 一種是直接寫在html的檔案裡面 如果我們今天想要監聽底下的按鈕被按了幾次 -->
+        <!-- 我們要先給按鈕一個 onclick的屬性 後面要放 一個js的function 意思就是 當按鈕被按了一次 就會觸發handle_click()這個函數程式 -->
+        <button id = "btn" onclick = "handle_click(this)" > 按我</button>
+        <!-- 當我們函式輸入this 代表會傳送主屬性給js handle_click(this) 代表會回傳 button 這給屬性給 js 這樣我們就可以在 js 對button做修改 -->
+
+        <script src="eventlistener.js" ></script>
+
+        <button id = "btn1">新按鈕按我</button>
+        <!-- 事件監聽器的第二種寫法就是全部寫在 js裡面 可以去eventlistener1.js 看 -->
+        <script src="eventlistener1.js" ></script>
+
+        
+
+    </body>
+
+</html>
